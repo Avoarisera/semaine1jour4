@@ -27,4 +27,4 @@ puts "Il y a #{hashi.keys.count {|k| k =~ /coin/i }} cryptos qui contiennent le 
 puts "Les devises dont le cours est inférieur à 6000 sont #{hashi.select{|k, v| v<6000}.keys.join(', ')}"
 
 #Montre le cours le plus haut parmi celles-la
-puts "La plus #{hashi.select{|k, v| v<6000}.values.max}"
+puts "Le cours le plus haut parmi celles-la est #{hashi.select{|k, v| v<6000}.values.max}"
